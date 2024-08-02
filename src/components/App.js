@@ -5,9 +5,14 @@ const App = () => {
 	return (
 		<div id='main'>
 			{/* Do not remove the main div */}
-			<ol key='relativeList'>
+			<ol id='relativeList' key='relativeList'>
 				{relativeList.map((relative, index) => (
-					<li key={`relativeListItem${index + 1}`}>{relative}</li>
+					<li
+						id={`relativeListItem${index + 1}`}
+						key={`relativeListItem${index + 1}`}
+					>
+						{relative}
+					</li>
 				))}
 			</ol>
 		</div>
